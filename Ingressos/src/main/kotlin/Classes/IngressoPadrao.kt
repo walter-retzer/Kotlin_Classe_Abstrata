@@ -4,10 +4,10 @@ package Classes
 //  imprimeValor(), exibindo um valor original e concatenada com o texto: "Ingresso Padrão".
 
 
-class IngressoPadrao(valor: Double = 150.00) : Ingresso(valor) {
+class IngressoPadrao(): Ingresso() {
 
     override fun imprimeValor(): String {
-        return "Ingresso Padrão: R$$valor"
+        return "Ingresso Padrão: R$${valor}"
     }
 
 }

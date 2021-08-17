@@ -4,7 +4,7 @@ package Classes
 //  ser definido na própria classe Ingresso, e uma função imprimeValor(). A classe
 //  Ingresso não poderá ser instanciada.
 
-abstract class Ingresso(var valor: Double) {
-
+abstract class Ingresso() {
+    val valor: Double = 150.00
     abstract fun imprimeValor(): String
 }
